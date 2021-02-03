@@ -20,7 +20,7 @@ let proyectos = ["Oftanmologia", "Oncologia", "Schizophrenia", "Diabetes"]
       if (proyecto === 0) {
         continue;
       } 
-      proyecto = proyecto + i;
+      proyecto = (proyecto + 1);
     }
     
     console.log(proyecto);
