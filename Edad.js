@@ -80,28 +80,35 @@ form.addEventListener("submit", (event) => {
 // objetos
 
 const Usuarios = () => {
-    {nombre: Marcela;
-    id: 1;
-    puesto: Fundadora;}
-    {nombre: Nadine;
-    id: 2;
-    puesto: Dev;}
     {nombre: John;
+    id: 1;
+    mail: 'john59@yahoo.com';
+    interest: "Regulatory advise"}
+    {nombre: Marcela
+    id: 2;
+    mail: "marcelaotero@yahoo.com";
+    interest: "Regulatory advise";}
+    {nombre: Gaston
     id: 3;
-    puesto: Autorizado;}
-};
+    mail: "gastond@yahoo.com";
+    interest: "Clinical Trials Management";}
+    
 
 class Usuario {
-    constructor (nombre, id, puesto) {
+    constructor (nombre, id, mail, interest) {
         this.nombre = nombre;
         this.id = id;
-        this.puesto = puesto;
+        this.mail = mail;
+        this.interest = interest;
     }
 
-    nuevoUsuario (onAdd) {
+    nuevoUsuario () {
         console.log("Hola nuevo usuario " + this.nombre)
     }
 }
 
-const Usuario4 = new Usuario ({nombre: "Christian", id: 5, puesto: contable}); 
+const Usuario4 = new Usuario ({nombre: "Christian", id: 5, mail: "christian@coderhouse.com" , interest: "Research and Development"}); 
 
+for (const nombre in Usuario4) {
+    console.log(...Usuario4[nombre])};
+};
