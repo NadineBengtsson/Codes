@@ -1,18 +1,16 @@
-// desafio complementario 
+var Descuento = (0.50);
+var precioProducto = 15.000;
+var precioDescuento = (precioProducto * Descuento);
 
-let Descuento = (0.50);
+const suma = (precioProducto, precioDescuento) => 
+    {precioProducto + precioDescuento};
+const resta = (precioProducto, precioDescuento) => 
+    {precioProducto - precioDescuento};
+const iva = () => 
+    {((precioProducto) * (0.21))};
 
-const suma = (precioProducto, precioDescuento) => {precioProducto + precioDescuento};
-
-const resta = (precioProducto, precioDescuento) => {precioProducto - precioDescuento};
-
-const iva = () => ((precioProducto) * (0.21));
-
-let precioProducto = 15.000; //carito el producto jaja
-
-let precioDescuento = (precioProducto * Descuento);
-
-let nuevoPrecio = resta (suma(precioProducto, iva(precioProducto)), precioDescuento);
+let nuevoPrecio= resta ((suma + iva));
 
 console.log(nuevoPrecio);
+
 

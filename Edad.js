@@ -1,15 +1,17 @@
 let edad = parseInt(prompt('Cual es tu edad?'));
 
-function MayorEdad(edad) {
-    if (edad == "") {
+const Ingreso=(edad) => {
+    if (edad === "") {
         alert("Ingresar tu edad");
-        if (edad > 18) {
-            alert("accessAllowed");
-        } else {
-            alert("accessAllowed denied");
-        };
     }
+};
+
+function MayorEdad(edad) {
+    if (edad > 18) {
+        alert("access allowed");
+    } else {
+        alert("access has been denied");
+        console.log(MayorEdad)
+    };
 }
 
-console.log(edad);
-console.log(MayorEdad);

@@ -38,11 +38,11 @@ for (const nombre in Usuario4) {
     console.log(Usuario4[nombre])
 };
 
-const Usuarios = []; 
-Usuarios.push(new Usuario (prompt("Ingresar nombre")));
-console.log(Usuarios);
+const IngresarUsuario=() => {
+    Usuario.push(new Usuario (prompt("Ingresar nombre")));
+    console.log(Usuarios)};
 
 let valorBusqueda = prompt ("INGRESE BUSQUEDA");
 
-console.log(Usuario.find(x => x.nombre === valorBusqueda));
+console.log(Usuario.find (x => Usuario.nombre === valorBusqueda));
 
