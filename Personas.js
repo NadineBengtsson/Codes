@@ -1,19 +1,19 @@
 
 // objetos
 
-const Usuarios = () => {
-    {nombre: John;
-    id: 1;
-    mail: 'john59@yahoo.com';
-    interest: "Regulatory advise"}
-    {nombre: Marcela
-    id: 2;
-    mail: "marcelaotero@yahoo.com";
-    interest: "Regulatory advise";}
-    {nombre: Gaston
-    id: 3;
-    mail: "gastond@yahoo.com";
-    interest: "Clinical Trials Management";}};
+var Usuarios = [
+    {nombre: "John",
+    id: 1,
+    mail: 'john59@yahoo.com',
+    interest: "Regulatory advise"},
+    {nombre: "Marcela",
+    id: 2,
+    mail: "marcelaotero@yahoo.com",
+    interest: "Regulatory advise",},
+    {nombre: "Gaston",
+    id: 3,
+    mail: "gastond@yahoo.com",
+    interest: "Clinical Trials Management",}];
     
 
 class Usuario {
@@ -38,11 +38,13 @@ for (const nombre in Usuario4) {
     console.log(Usuario4[nombre])
 };
 
-const IngresarUsuario=() => {
+const IngresarUsuario=(Usuarios) => {
     Usuario.push(new Usuario (prompt("Ingresar nombre")));
     console.log(Usuarios)};
 
-let valorBusqueda = prompt ("INGRESE BUSQUEDA");
+let valorBusqueda = prompt ("INGRESE SU INTERES");
 
-console.log(Usuario.find (x => Usuario.nombre === valorBusqueda));
-
+(Usuarios.find(function (x) {
+    console.log(x);
+    Usuario.interest == valorBusqueda; 
+}));
